@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "name": "BreakFast",
+      "description": "Delicious Food",
+      "regular price": "120",
+      "sale price" : "100",
+      "product photo" : "hrry.in/bhojanshala/app_files/supercat_images/breakfast.png",
+      "colors" : [
+        "white",
+        "black"
+      ],
+      "stores": [
+        "Alaknanda"
+      ]
+
+    },
+    {
+      "name": "Lunch",
+      "description": "Delicious Food",
+      "regular price": "140",
+      "sale price" : "100",
+      "product photo" : "hrry.in/bhojanshala/app_files/supercat_images/dinner.png",
+      "colors" : [
+        "white",
+        "black"
+      ],
+      "stores": [
+        "Alaknanda"
+      ]
+
+    },   {
+      "name": "BreakFast",
+      "description": "Delicious Food",
+      "regular price": "120",
+      "sale price" : "100",
+      "product photo" : "hrry.in/bhojanshala/app_files/supercat_images/lunch.jpg",
+      "colors" : [
+        "white",
+        "black"
+      ],
+      "stores": [
+        "Dehli Darbar"
+      ]
+
+    }
+  ]
+}
