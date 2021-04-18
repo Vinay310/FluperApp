@@ -2,6 +2,7 @@ package com.net.fluperapp;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.room.Database;
@@ -51,15 +52,31 @@ public abstract class ProductDatabase extends RoomDatabase {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
-            fillJSONData(activity);
+            new PopulateDbAyncTask(instance).execute();
 
 
         }
     };
 
+    private static class PopulateDbAyncTask extends AsyncTask<Void, Void, Void> {
+        private ProductDao productDao;
+
+        private PopulateDbAyncTask(ProductDatabase db) {
+            productDao = db.productDao();
+            new PopulateDbAyncTask(instance).execute();
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            fillJSONData(activity);
+            return null;
+        }
+    }
+
     private static void fillJSONData(Context context) {
         ProductDao productDao = getInstance(context).productDao();
         JSONArray products = loadJsonArray(context);
+        Log.e("product array is", "is " + products);
         try {
             for (int i = 0; i < products.length(); i++) {
                 JSONObject jsonObject = products.getJSONObject(i);

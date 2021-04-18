@@ -26,10 +26,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        productViewModel = new ViewModelProvider(
-                this,
-                ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())
-        ).get(ProductViewModel.class);
+        productViewModel = ViewModelProviders.of(this).get(ProductViewModel.class);
+
 
     }
 
@@ -37,10 +35,11 @@ public class MainActivity extends AppCompatActivity {
         colors.add("swd");
         stores.add("A");
         productViewModel.insert(new Product(
-                "ad",
-                "dwqd",
-                "dad",
-                "dwd",
+                "Tide Plus Extra Power (Jasmine & Rose) - 7 kg Detergent Powder - with Free Detergent Powder - 3 kg",
+                "Helps remove dirt from even washed clothes to give you brilliant whiteness\n" +
+                        "The enzyme formula in the washing powder helps in washing away the toughest stains on the clothes\n",
+                "800",
+                "719",
                 "http://hrry.in/bhojanshala/app_files/supercat_images/dinner.png",
                 colors,
                 stores

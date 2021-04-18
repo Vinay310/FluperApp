@@ -5,10 +5,11 @@
       "description": "Delicious Food",
       "regular price": "120",
       "sale price" : "100",
-      "product photo" : "hrry.in/bhojanshala/app_files/supercat_images/breakfast.png",
+      "product photo" : "http://hrry.in/bhojanshala/app_files/supercat_images/breakfast.png",
       "colors" : [
-        "white",
-        "black"
+        {
+          "color": "black"
+        }
       ],
       "stores": [
         "Alaknanda"
@@ -20,10 +21,11 @@
       "description": "Delicious Food",
       "regular price": "140",
       "sale price" : "100",
-      "product photo" : "hrry.in/bhojanshala/app_files/supercat_images/dinner.png",
+      "product photo" : "http://hrry.in/bhojanshala/app_files/supercat_images/dinner.png",
       "colors" : [
-        "white",
-        "black"
+        {
+          "color": "black"
+        }
       ],
       "stores": [
         "Alaknanda"
@@ -34,10 +36,11 @@
       "description": "Delicious Food",
       "regular price": "120",
       "sale price" : "100",
-      "product photo" : "hrry.in/bhojanshala/app_files/supercat_images/lunch.jpg",
+      "product photo" : "http://hrry.in/bhojanshala/app_files/supercat_images/lunch.jpg",
       "colors" : [
-        "white",
-        "black"
+        {
+          "color": "black"
+        }
       ],
       "stores": [
         "Dehli Darbar"

@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FluperApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.FullScreenImage"></activity>
+        <activity android:name=".ui.FullScreenImage"/>
         <activity android:name=".ui.ShowProductActivity" />
         <activity android:name=".ui.ProductListActivity" />
         <activity android:name=".ui.MainActivity">
